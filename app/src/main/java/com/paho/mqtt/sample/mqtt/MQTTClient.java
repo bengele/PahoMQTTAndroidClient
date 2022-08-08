@@ -104,7 +104,7 @@ public class MQTTClient implements MqttCallback {
                     emitConnectResult(false, "MQTT连接失败，" + (e != null ? e.getMessage() : ""));
                     boolean wifi = NetworkUtils.isWifiConnected();
                     boolean mobile = NetworkUtils.isMobileData();
-                    boolean ping = (mobile && NetworkUtils.isAvailableByPing("gw.benewtech.cn")) || wifi;
+                    boolean ping = (mobile && NetworkUtils.isAvailableByPing("www.qq.com")) || wifi;
                     emitConnectResult(false, "MQTT连接失败，" + (e != null ? e.getMessage() : "") + "网络能否ping通 = " + ping);
                     if (!ping) {
                         NLogger.d(TAG, "网络无法PING通，停止重连");
