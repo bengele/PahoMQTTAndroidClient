@@ -1,0 +1,5 @@
+rootProject.name = "PahoMQTTAndroidClient"
+include ':app'
+include ':libs:libMqttAndroidClient'
+include ':libs:libMqttV3ClientJar'
+

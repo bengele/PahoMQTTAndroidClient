@@ -1,0 +1,24 @@
+apply plugin: 'java-library'
+
+dependencies {
+    compileOnly files('libs/framework8.jar')
+
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
+
+
+//gradle.projectsEvaluated {
+//    tasks.withType(JavaCompile) {
+//        Set<File> fileSet = options.bootstrapClasspath.getFiles()
+//        List<File> newFileList =  new ArrayList<>();
+//        //JAVA语法，可连续调用，输入参数建议为相对路径
+//        newFileList.add(new File("libs/framework8.jar"))
+//        //最后将原始参数添加
+//        newFileList.addAll(fileSet)
+//        options.bootstrapClasspath = files(
+//                newFileList.toArray()
+//        )
+//    }
+//}
