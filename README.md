@@ -1,4 +1,4 @@
 # PahoMQTTAndroidClient
-1. 根据eclipse的Android mqtt库修改
-2. 修复android深度休眠情况心跳丢失
-3. 优化了代码中闹钟问题导致心跳包丢失
+1. Modified according to eclipse's Android mqtt library
+2. Fix ping-pong loss in android deep sleep situation
+3. Optimized the alarm clock problem in the code, resulting in the loss of ping-pong
